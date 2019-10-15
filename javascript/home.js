@@ -7,10 +7,6 @@ var tops = document.getElementsByClassName("top");
 var bottoms = document.getElementsByClassName("bottom");
 
 $(document).ready(function(){
-  $(".header-container").click(function() {
-    $(".header-container").hide();
-  });
-
   for (let i=0; i<tops.length; i++) {
     $(tops[i]).click(function() {
       $(bottoms[i]).slideToggle('medium');
