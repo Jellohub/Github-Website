@@ -1,0 +1,162 @@
+/*
+  Author: Angelo Turri
+  Date of last modification: 10/14/2019
+*/
+
+
+/* This makes divs extend to the edge of their parent div, as far as I can tell.
+It's a useful piece of code that makes the headers look nicer. */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* This centers any divs one level below the body div horizontally on the page. */
+body {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  background-color: rgb(189, 189, 189);
+}
+
+/* This div contains all the meaningful material you see on the page.
+It only goes to a maximum width of 1440px to make everything look clean. */
+#master {
+  background-image: url("https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/1363450/910/607/m2/fpnw/wm0/img_4185-.jpg?1465877099&s=b63d2face2dd4a4541dde70ccbb543a4");
+  width: 1440px;
+}
+
+/* Makes the header items center horizontally on the page and sets the background color,
+and other minor formatting. */
+.header-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  background-color: rgba(190, 163, 131, 0.322);
+  padding-top: 20px;
+}
+
+/* Sets each item within the header as a row-aligned flex container. */
+.header-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Centers the navigation bar, contained within the nav_container, on the page. */
+#nav_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+
+/* Aligns the link buttons in a row instead of a column. */
+ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+/* Sets the size of the buttons as well as the font color. */
+li a {
+  color: rgb(37, 36, 36);
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 15px;    padding-right: 20px;    padding-bottom: 15px;    padding-left: 20px;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+/* Sets the color of a link button when you aren't hovering over it. */
+a:link {
+  background-color:rgb(235, 129, 134);
+  text-decoration: none;
+  font-family: 'Dosis', sans-serif;
+  font-size: 20px;
+  /**box-shadow: 0 6px #ab3c3c;**/
+}
+a:hover { background-color: rgb(109, 180, 115); }
+a:active { background-color: white; }
+
+/* Aligns all the flip cards in rows. */
+.main-big-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Formatting for each flip-card container. */
+.flip-card-container {
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  margin-top: 80px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* Formatting for each flip card. */
+.flip-card {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  transition: transform 1s;
+  transition: -webkit-transform 1s; /*Adds animation support for Chrome and Safari.*/
+  transform-style: preserve-3d;
+}
+
+.flip-card-container.flip .flip-card {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg); /*Adds animation support for Chrome and Safari.*/
+}
+
+/* Common properties for both the front and back of the flip cards. */
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /*Adds animation support for Chrome and Safari.*/
+  backface-visibility: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Be Vietnam', sans-serif;
+  font-size: 35px;
+  height: 300px;
+  width: 300px;
+  border: 7px solid rgb(66, 27, 27);
+  border-radius: 10px;
+  background-color: rgba(54, 24, 24, 0.938);
+  color: white;
+}
+
+.front:hover, .back:hover { background-color: rgba(107, 48, 48, 0.938); }
+
+.front:active, .back:active { background-color: rgba(22, 10, 10, 0.938); }
+
+.back { transform: rotateY(180deg); }
+
+.main-item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.text { margin: 10px; }
+
+.icon { height: 150px; }
+
+#credit { margin-top: 40px; color: white; }

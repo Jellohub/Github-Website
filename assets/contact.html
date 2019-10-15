@@ -1,0 +1,86 @@
+<!--
+  Author: Angelo Turri
+  Date of last modification: 10/14/2019
+-->
+
+<!doctype html>
+<html>
+<head>
+  <title>Contact</title>
+  <link rel="stylesheet" href="css/contact.css">
+  <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="javascript/contact.js"></script>
+</head>
+<body>
+  
+  <div id="master">
+    <div class="header-container">
+      <div class="header-item">
+        <img src="./pictures/icons/contact_2.png" height="250" class="logo">
+      </div>
+
+      <div class="header-item">
+        <ul id="nav_container">
+          <li class="nav_item">
+            <a href="home_page.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="products.html">Products</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="development.html">Development</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="sanitation.html">Sanitation</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="workers.html">Workers</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main-huge-container">
+      <div class="main-container left">
+        <div id="summary">
+          Our contact information: <br>
+          Address: 16695 Common Road, Roseville, MI 48066 <br>
+          Phone number: 586-773-6010 <br> <br>
+    
+          <span id="directions">
+            Fill out the forms below if you wish to send us a message.
+          </span>
+        </div>
+    
+        <form name="contactForm" action="action.php" onsubmit="return validateForms()" method="post" enctype="text/plain">
+          <input type="text" name="firstname" Placeholder="First Name"><br>
+          <input type="text" name="lastname" Placeholder="Last Name"><br>
+          <input type="text" name="mail" Placeholder="Email"><br>
+          <input type="text" name="phone" Placeholder="Phone Number"><br>
+          <input type="text" name="website" Placeholder="Website"><br>
+          <input type="text" name="company" Placeholder="Company"><br>
+          <input type="text" name="comment" Placeholder="What would you like to tell us?"><br><br>
+          <input type="submit" value="Send">
+          <input type="reset" value="Reset">
+        </form>
+      </div>
+
+      <div class="main-container right">
+        <a class="twitter-timeline" data-width="550" data-height="810" data-theme="dark" data-link-color="#E95F28" href="https://twitter.com/Turris_Italian?ref_src=twsrc%5Etfw">Tweets by Turris_Italian</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </div>
+
+    <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from 
+      <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a></div>
+  </div>
+
+</body>
+</html>

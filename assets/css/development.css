@@ -1,0 +1,251 @@
+/*
+  Author: Angelo Turri
+  Date of last modification: 10/14/2019
+*/
+
+
+/* This makes divs extend to the edge of their parent div, as far as I can tell.
+It's a useful piece of code that makes the headers look nicer. */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* This centers any divs one level below the body div horizontally on the page. */
+body {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  background-color: rgb(189, 189, 189);
+}
+
+/* This div contains all the meaningful material you see on the page.
+It only goes to a maximum width of 1440px to make everything look clean. */
+#master {
+  position: relative;
+  background-image: url("blue.jpg");
+  width: 1440px;
+}
+
+/* Makes the header items center horizontally on the page and sets the background color,
+and other minor formatting. */
+.header-container {
+  color: #fff;
+  background-image: url("rotating_pasta_cropped.gif");
+  background-repeat: no-repeat;
+  background-size: 1450px 520px;
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+
+.logo { margin: 20px 0px 0px 20px; }
+
+/* Sets each item within the header as a row-aligned flex container. */
+.header-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Centers the navigation bar, contained within the nav_container, on the page. */
+#nav_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+
+/* Aligns the link buttons in a row instead of a column. */
+ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+/* Sets the size of the buttons as well as the font color. */
+li a {
+  color: rgb(37, 36, 36);
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 15px;    padding-right: 20px;    padding-bottom: 15px;    padding-left: 20px;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+/* Sets the color of a link button when you aren't hovering over it. */
+a:link {
+  background-color:rgb(235, 129, 134);
+  text-decoration: none;
+  font-family: 'Dosis', sans-serif;
+  font-size: 20px;
+}
+
+/* Sets the color of a link button when you are hovering over it. */
+a:hover {
+  background-color: rgb(109, 180, 115);
+}
+
+/* Sets the color of a link button when you click on it. */
+a:active {
+  background-color: white;
+}
+
+/* Formatting for the grey block of text. */
+#summary {
+  font-family: 'Be Vietnam', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  padding: 30px;
+  height: fit-content;
+  background-color: rgb(185, 185, 185);
+  border: 7px solid gray;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: scroll;
+  line-height: 2;
+}
+
+/* Centers each box horizontally on the page. */
+.mega_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Formats each info box. */
+.container {
+  font-family: 'Cairo', sans-serif;
+  text-align: center;
+  width: 83%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 20px;
+  border: 3px solid rgb(163, 194, 161);
+  background-color: rgb(208, 235, 211);
+  border-radius: 10px;
+}
+
+/* Formats the items within the info box. */
+.flex-item { margin: 0px; }
+
+/* Contains the picture and closer when they're not zoomed in. */
+.small_container {
+  position: relative;
+  height: 200px;
+  width: 355px;
+}
+
+/* Contains the smaller pictures and closers when they're not zoomed in. */
+.small_container_2 {
+  position: relative;
+  height: 150px;
+  width: 250px;
+  margin: 15px;
+}
+
+/* This is the class that contains the picture and closer. */
+.photo_container {
+  z-index: 1; /*Places all contianers beneath the "id=gray" div, which has z-index of 2.*/
+  position: absolute; /*So that the closer div can be positioned over it.*/
+  height: inherit;
+  width: inherit;
+}
+
+/* This is the class with the "click to open/close" text. */
+.closer {
+  position: absolute; /*So it can be positioned over the photo_container.*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /*Centers the text vertically.*/
+  z-index: 3; /*Places it above all other elements on the page.*/
+  background-color: rgba(0, 0, 0, 0.685);
+  text-align: center; /*Centers the text horizontally.*/
+  font-size: 30px;
+  color: white;
+  height: inherit;
+  width: inherit;
+}
+
+/* The class that gets applied to zoomed photos. */
+.zoomed {
+  z-index: 3;
+  position: fixed; /*Will not move if you scroll through the page.*/
+  height: 600px;
+  width: 1065px;
+
+  /*The following properties center the image on the page.*/
+  left: 50%;
+  top: 50%;
+
+  /* -1/2 height */
+  margin-left: -532px;
+  
+  /* -1/2 width */
+  margin-top: -300px;
+}
+
+.number { height: 150px; }
+
+.smaller_number { height: 100px; }
+
+.explanation { width: 500px; }
+
+.pic {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  height: inherit;
+  width: inherit;
+}
+
+.smaller_pic {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  height: inherit;
+  width: inherit;
+}
+
+/* Steps 11, 12, 13, and 14 are formatted slightly differntly from the rest.
+The items inside are put into a column instead of a row. */
+.vertical_container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* The page-wide translucent div. */
+#gray {
+  z-index: 2; /*Places it above all elements on the page except for the enlarged picture/closer.*/
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+  background-color: rgba(71, 69, 69, 0.74)
+}
+
+/* Applied to all invisible items */
+.invisible { visibility: hidden; }

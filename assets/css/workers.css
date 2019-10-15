@@ -1,0 +1,196 @@
+/*
+  Author: Angelo Turri
+  Date of last modification: 10/14/2019
+*/
+
+
+/* This makes divs extend to the edge of their parent div, as far as I can tell.
+It's a useful piece of code that makes the headers look nicer. */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* This centers any divs one level below the body div horizontally on the page. */
+body {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  background-color: rgb(189, 189, 189);
+}
+
+/* This div contains all the meaningful material you see on the page.
+It only goes to a maximum width of 1440px to make everything look clean. */
+#master {
+  width: 1440px;
+  background-color: rgb(241, 247, 255);
+}
+
+/* Makes the header items center horizontally on the page and sets the background color,
+and other minor formatting. */
+.header-container {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+   background-color: rgb(221, 90, 90);
+   padding-top: 20px;
+}
+
+/* Sets each item within the header as a row-aligned flex container. */
+.header-item {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+/* Centers the navigation bar, contained within the nav_container, on the page. */
+#nav_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+
+/* Aligns the link buttons in a row instead of a column. */
+ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+/* Sets the size of the buttons as well as the font color. */
+li a {
+  color: rgb(37, 36, 36);
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 15px;    padding-right: 20px;    padding-bottom: 15px;    padding-left: 20px;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+/* Sets the color of a link button when you aren't hovering over it. */
+a:link {
+  background-color:rgb(235, 129, 134);
+  text-decoration: none;
+  font-family: 'Dosis', sans-serif;
+  font-size: 20px;
+}
+
+a:hover { background-color: rgb(109, 180, 115); }
+a:active { background-color: white; }
+
+/* Formatting for the grey block of text. */
+#summary {
+  font-family: 'Be Vietnam', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  padding: 30px;
+  height: fit-content;
+  background-color: rgb(185, 185, 185);
+  border: 7px solid gray;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: scroll;
+  line-height: 2;
+}
+
+/* Centers the picture and table horizontally on the page. */
+.main-huge-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Aligns the picture and table in a row. Is set to wrap the table below the picture
+if the browser is narrowed. */
+.main-big-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: 'Muli', sans-serif;
+}
+
+
+/* Formats the div that contains the picture. */
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Formats the div that contains the table. */
+.right {
+  display:  flex;
+  flex-direction: column;
+  width: 500px;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.table {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+/* These rules put the text dead center of each cell. The flex rules center the text
+vertically, and the text-align rule centers the text horizontally. */
+.cell {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Formats the "Position" cell. */
+.red-master {
+  background-color: rgb(252, 86, 86);
+  border: 4px solid rgb(255, 183, 183);
+  font-size: 1.5em;
+  height: 140px;
+  width: 200px;
+}
+
+/* Formats the "Description" cell. */
+.green-master {
+  background-color: rgb(62, 204, 62);
+  border: 4px solid rgb(135, 252, 135);
+  font-size: 1.5em;
+  height: 140px;
+  width: 200px;
+}
+
+/* Formats all the other red cells. */
+.red-minor {
+  font-size: 1.3em;
+  background-color: rgb(255, 183, 183);
+  border: 4px solid rgb(228, 195, 195);
+  border-radius: 5px;
+  height: 110px;
+  width: 200px;
+  margin: 5px 0px 5px 0px;
+}
+
+/* Formats all the other green cells. */
+.green-minor {
+  font-size: 15px;
+  background-color: rgb(135, 252, 135);
+  border: 4px solid rgb(197, 230, 197);
+  border-radius: 5px;
+  height: 110px;
+  width: 200px;
+  margin: 5px;
+}
