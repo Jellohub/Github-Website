@@ -1,6 +1,6 @@
 /*
   Author: Angelo Turri
-  Date of last modification: 10/14/2019
+  Date of last modification: 10/15/2019
 */
 
 
@@ -27,6 +27,7 @@ It only goes to a maximum width of 1440px to make everything look clean. */
 #master {
   background-image: url("https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/1363450/910/607/m2/fpnw/wm0/img_4185-.jpg?1465877099&s=b63d2face2dd4a4541dde70ccbb543a4");
   width: 1440px;
+  display: none;
 }
 
 /* Makes the header items center horizontally on the page and sets the background color,
@@ -64,26 +65,23 @@ ul {
   overflow: hidden;
 }
 
-/* Sets the size of the buttons as well as the font color. */
-li a {
+/* Sets the general styling of the buttons. */
+.button {
   color: rgb(37, 36, 36);
   border-radius: 5px;
   text-align: center;
-  padding-top: 15px;    padding-right: 20px;    padding-bottom: 15px;    padding-left: 20px;
+  padding: 15px 20px 15px 20px;
   text-decoration: none;
   margin-left: 10px;
-}
 
-/* Sets the color of a link button when you aren't hovering over it. */
-a:link {
   background-color:rgb(235, 129, 134);
   text-decoration: none;
   font-family: 'Dosis', sans-serif;
   font-size: 20px;
-  /**box-shadow: 0 6px #ab3c3c;**/
 }
-a:hover { background-color: rgb(109, 180, 115); }
-a:active { background-color: white; }
+
+.button:hover { background-color: rgb(109, 180, 115); }
+.button:active { background-color: white; }
 
 /* Aligns all the flip cards in rows. */
 .main-big-container {
@@ -158,5 +156,56 @@ a:active { background-color: white; }
 .text { margin: 10px; }
 
 .icon { height: 150px; }
+
+#footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 20px;
+  background-color: rgb(88, 88, 88);
+  /* background-image: url("https://www.tendance-feutre.com/pub/Gamme_Bio/feutree-gris-bio.jpg"); */
+  border-top: 3px solid rgb(112, 112, 112);
+  height: 250px;
+  margin-top: 50px;
+}
+
+.footer-item {
+  font-family: 'IBM Plex', sans-serif;
+  line-height: 2.5;
+  color: rgb(255, 255, 255);
+  flex: 1;
+  height: 100%;
+  padding-left: 12px;
+}
+
+.footer-border {
+  border-right: 2px solid grey;
+}
+
+.button_light {
+  background-color: rgb(88, 88, 88);
+  color: rgb(255, 255, 255);
+  border-radius: 2px;
+  border: 1px solid rgb(124, 124, 124);
+  text-align: center;
+  text-decoration: none;
+  text-decoration: none;
+  padding: 5px 10px 5px 10px;
+  font-family: 'Arial', sans-serif;
+  font-size: 17px;
+}
+
+.button_light:hover { background-color: rgb(128, 128, 128); }
+
+.button_facebook {
+  background-color: rgb(88, 88, 88);
+  border-radius: 2px;
+  border: 1px solid rgb(95, 95, 95);
+  padding: 11px 20px 11px 20px;
+  font-family: 'Arial', sans-serif;
+  font-size: 17px;
+  background-image: url("../pictures/icons/facebook.png");
+  background-size: cover;
+}
 
 #credit { margin-top: 40px; color: white; }

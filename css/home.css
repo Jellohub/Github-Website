@@ -1,7 +1,7 @@
 /*
   Author: Angelo Turri
-  Date of last modification: 10/14/2019
-*/
+  Date of last modification: 10/15/2019
+*/ 
 
 
 /* This makes divs extend to the edge of their parent div, as far as I can tell.
@@ -25,6 +25,7 @@ body {
 It only goes to a maximum width of 1440px to make everything look clean. */
 #master {
   width: 1440px;
+  display: none;
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/84/Rigatoni.jpg");
 }
 
@@ -72,26 +73,23 @@ ul {
   overflow: hidden;
 }
 
-/* Sets the size of the buttons as well as the font color. */
-li a {
+/* Sets the general styling of the buttons. */
+.button {
   color: rgb(37, 36, 36);
   border-radius: 5px;
   text-align: center;
-  padding-top: 15px;    padding-right: 20px;    padding-bottom: 15px;    padding-left: 20px;
+  padding: 15px 20px 15px 20px;
   text-decoration: none;
   margin-left: 10px;
-}
 
-/* Sets the color of a link button when you aren't hovering over it. */
-a:link {
   background-color:rgb(235, 129, 134);
   text-decoration: none;
   font-family: 'Dosis', sans-serif;
   font-size: 20px;
 }
 
-a:hover { background-color: rgb(109, 180, 115); }
-a:active { background-color: white; }
+.button:hover { background-color: rgb(109, 180, 115); }
+.button:active { background-color: white; }
 
 /* Aligns each pair of boxes in a column. */
 .main-large-container {
@@ -204,4 +202,55 @@ and when you're clicking on them. */
 .red:active {
   background-color: rgb(160, 83, 83);
   color: white;
+}
+
+#footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 20px;
+  background-color: rgb(88, 88, 88);
+  /* background-image: url("https://www.tendance-feutre.com/pub/Gamme_Bio/feutree-gris-bio.jpg"); */
+  border-top: 3px solid rgb(112, 112, 112);
+  height: 250px;
+  margin-top: 70px;
+}
+
+.footer-item {
+  font-family: 'IBM Plex', sans-serif;
+  line-height: 2.5;
+  color: rgb(255, 255, 255);
+  flex: 1;
+  height: 100%;
+  padding-left: 12px;
+}
+
+.footer-border {
+  border-right: 2px solid grey;
+}
+
+.button_light {
+  background-color: rgb(88, 88, 88);
+  color: rgb(255, 255, 255);
+  border-radius: 2px;
+  border: 1px solid rgb(124, 124, 124);
+  text-align: center;
+  text-decoration: none;
+  text-decoration: none;
+  padding: 5px 10px 5px 10px;
+  font-family: 'Arial', sans-serif;
+  font-size: 17px;
+}
+
+.button_light:hover { background-color: rgb(128, 128, 128); }
+
+.button_facebook {
+  background-color: rgb(88, 88, 88);
+  border-radius: 2px;
+  border: 1px solid rgb(95, 95, 95);
+  padding: 11px 20px 11px 20px;
+  font-family: 'Arial', sans-serif;
+  font-size: 17px;
+  background-image: url("../pictures/icons/facebook.png");
+  background-size: cover;
 }

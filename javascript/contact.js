@@ -1,8 +1,20 @@
 /*
   Author: Angelo Turri
-  Date of last modification: 10/14/2019
+  Date of last modification: 10/15/2019
 */
 
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+$(document).ready(function(){
+  $("#master").fadeIn(600);
+
+  $("#backtotop").click(function() {
+    topFunction();
+  });
+});
 
 function validateForms() {
   

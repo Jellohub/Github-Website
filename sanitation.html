@@ -1,6 +1,6 @@
 <!--
   Author: Angelo Turri
-  Date of last modification: 10/14/2019
+  Date of last modification: 10/15/2019
 -->
 
 <!doctype html>
@@ -8,6 +8,7 @@
 <head>
   <title>Sanitation</title>
   <link rel="stylesheet" href="css/sanitation.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Be+Vietnam:100&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cairo:300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
@@ -21,31 +22,31 @@
       </div>
 
       <div class="header-item">
-          <ul id="nav_container">
-            <li class="nav_item">
-              <a href="index.html">Home</a>
-            </li>
+        <ul id="nav_container">
+          <li class="nav_item">
+            <a class="button" href="index.html">Home</a>
+          </li>
 
-            <li class="nav-item">
-              <a href="products.html">Products</a>
-            </li>
+          <li class="nav-item">
+            <a class="button" href="products.html">Products</a>
+          </li>
 
-            <li class="nav-item">
-              <a href="development.html">Development</a>
-            </li>
+          <li class="nav-item">
+            <a class="button" href="development.html">Development</a>
+          </li>
 
-            <li class="nav-item">
-              <a href="sanitation.html">Sanitation</a>
-            </li>
+          <li class="nav-item">
+            <a class="button" href="sanitation.html">Sanitation</a>
+          </li>
 
-            <li class="nav-item">
-              <a href="workers.html">Workers</a>
-            </li>
+          <li class="nav-item">
+            <a class="button" href="workers.html">Workers</a>
+          </li>
 
-            <li class="nav-item">
-              <a href="contact.html">Contact</a>
-            </li>
-          </ul>
+          <li class="nav-item">
+            <a class="button" href="contact.html">Contact</a>
+          </li>
+        </ul>
       </div>
     </div>
 
@@ -104,8 +105,30 @@
       </div>
     </div>
 
-    <div>Icons made by <a href="https://www.flaticon.com/authors/prettycons" title="prettycons">prettycons</a> 
-      from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a></div>
+    <div id="footer">
+      <div class="footer-item footer-border">
+        <a class="button_light" href="https://www.flaticon.com/authors/prettycons" title="prettycons">prettycons</a>
+        from <a class="button_light" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+        <span>- creator of sanitizer icon</span>
+        <br>
+        <a class="button_light" href="https://turrisitalianfoods.com">Original Website</a>
+         <span>Click here to see Turri's Real Website!</span> <br>
+        <a class="button_light" href="contact.html">Contact Us!</a> <br>
+        <button class="button_light" id="backtotop">Back to Top</button>
+      </div>
+
+      <div class="footer-item">
+        <span>Follow us on twitter: </span>
+        <a href="https://twitter.com/Turris_Italian?ref_src=twsrc%5Etfw" class="twitter-follow-button"
+        data-size="large" data-show-count="false">Follow @Turris_Italian</a><script async
+        src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+        <br>
+        
+        <span>Follow us on facebook: </span>
+        <a class="button_facebook" href="https://www.facebook.com/turrisitalianfoods/"></a>
+      </div>
+    </div>
   </div>
 
 </body>
