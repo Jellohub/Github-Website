@@ -131,6 +131,9 @@ so if the browser page is narrowed, things don't get ugly. */
 
 /* Formatted the items within the main containers. */
 .main-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
   margin-right: 20px;
   width: fit-content;
   text-align: justify;
