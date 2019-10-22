@@ -185,12 +185,12 @@ input[type="reset"] {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  padding: 20px;
+  padding: 20px 5px 20px 5px;
   background-color: rgb(88, 88, 88);
   /* background-image: url("https://www.tendance-feutre.com/pub/Gamme_Bio/feutree-gris-bio.jpg"); */
   border-top: 3px solid rgb(112, 112, 112);
-  height: 250px;
-  margin-top: 50px;
+  height: 300px;
+  margin-top: 70px;
 }
 
 .footer-item {
@@ -202,7 +202,7 @@ input[type="reset"] {
   padding-left: 12px;
 }
 
-.footer-border {
+.footer-left {
   border-right: 2px solid grey;
 }
 

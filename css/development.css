@@ -97,10 +97,11 @@ ul {
 #summary {
   font-family: 'Be Vietnam', sans-serif;
   font-size: 20px;
-  text-align: center;
+  font-weight: 300;
+  text-align: left;
   padding: 30px;
   height: fit-content;
-  background-color: rgb(185, 185, 185);
+  background-color: rgb(241, 241, 241);
   border: 7px solid gray;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -129,7 +130,7 @@ ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 10px;
   margin: 20px;
@@ -139,7 +140,7 @@ ul {
 }
 
 /* Formats the items within the info box. */
-.flex-item { margin: 0px; }
+.flex-item { margin: 10px 0px 10px 0px; }
 
 /* Contains the picture and closer when they're not zoomed in. */
 .small_container {
@@ -197,11 +198,11 @@ ul {
   margin-top: -300px;
 }
 
-.number { height: 150px; }
+.number { height: 150px; margin-left: 30px; }
 
 .smaller_number { height: 100px; }
 
-.explanation { width: 500px; }
+.explanation { width: 400px; }
 
 .pic {
   position: absolute;
@@ -233,12 +234,12 @@ The items inside are put into a column instead of a row. */
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  padding: 20px;
+  padding: 20px 5px 20px 5px;
   background-color: rgb(88, 88, 88);
   /* background-image: url("https://www.tendance-feutre.com/pub/Gamme_Bio/feutree-gris-bio.jpg"); */
   border-top: 3px solid rgb(112, 112, 112);
-  height: 250px;
-  margin-top: 50px;
+  height: 300px;
+  margin-top: 70px;
 }
 
 .footer-item {
@@ -250,7 +251,7 @@ The items inside are put into a column instead of a row. */
   padding-left: 12px;
 }
 
-.footer-border {
+.footer-left {
   border-right: 2px solid grey;
 }
 
@@ -291,3 +292,13 @@ The items inside are put into a column instead of a row. */
 
 /* Applied to all invisible items */
 .invisible { visibility: hidden; }
+
+@media screen and (max-width: 1157px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}

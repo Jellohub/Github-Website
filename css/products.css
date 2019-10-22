@@ -25,9 +25,14 @@ body {
 /* This div contains all the meaningful material you see on the page.
 It only goes to a maximum width of 1440px to make everything look clean. */
 #master {
-  background-image: url("https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/1363450/910/607/m2/fpnw/wm0/img_4185-.jpg?1465877099&s=b63d2face2dd4a4541dde70ccbb543a4");
   width: 1440px;
   display: none;
+  background-color: rgba(107, 80, 80, 0.938);
+}
+
+/* Contains image for header. */
+.header-image {
+  background-image: url("https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/1363450/910/607/m2/fpnw/wm0/img_4185-.jpg?1465877099&s=b63d2face2dd4a4541dde70ccbb543a4");
 }
 
 /* Makes the header items center horizontally on the page and sets the background color,
@@ -75,9 +80,9 @@ ul {
   margin-left: 10px;
 
   background-color:rgb(235, 129, 134);
-  text-decoration: none;
   font-family: 'Dosis', sans-serif;
   font-size: 20px;
+  font-weight: 400;
 }
 
 .button:hover { background-color: rgb(109, 180, 115); }
@@ -161,12 +166,12 @@ ul {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  padding: 20px;
+  padding: 20px 5px 20px 5px;
   background-color: rgb(88, 88, 88);
   /* background-image: url("https://www.tendance-feutre.com/pub/Gamme_Bio/feutree-gris-bio.jpg"); */
   border-top: 3px solid rgb(112, 112, 112);
-  height: 250px;
-  margin-top: 50px;
+  height: 300px;
+  margin-top: 70px;
 }
 
 .footer-item {
@@ -178,7 +183,7 @@ ul {
   padding-left: 12px;
 }
 
-.footer-border {
+.footer-left {
   border-right: 2px solid grey;
 }
 
@@ -207,5 +212,3 @@ ul {
   background-image: url("../pictures/icons/facebook.png");
   background-size: cover;
 }
-
-#credit { margin-top: 40px; color: white; }

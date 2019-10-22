@@ -87,10 +87,11 @@ ul {
 #summary {
   font-family: 'Be Vietnam', sans-serif;
   font-size: 20px;
-  text-align: center;
+  font-weight: 300;
+  text-align: left;
   padding: 30px;
   height: fit-content;
-  background-color: rgb(185, 185, 185);
+  background-color: rgb(214, 214, 214);
   border: 7px solid gray;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -120,12 +121,11 @@ if the browser is narrowed. */
   font-family: 'Muli', sans-serif;
 }
 
-
 /* Formats the div that contains the picture. */
 .left {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 /* Formats the div that contains the table. */
@@ -133,15 +133,16 @@ if the browser is narrowed. */
   display:  flex;
   flex-direction: column;
   width: 500px;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .table {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 /* These rules put the text dead center of each cell. The flex rules center the text
@@ -158,8 +159,9 @@ vertically, and the text-align rule centers the text horizontally. */
   background-color: rgb(252, 86, 86);
   border: 4px solid rgb(255, 183, 183);
   font-size: 1.5em;
-  height: 140px;
-  width: 200px;
+  height: 150px;
+  width: 210px;
+  margin: 0px 5px 0px 0px;
 }
 
 /* Formats the "Description" cell. */
@@ -167,8 +169,8 @@ vertically, and the text-align rule centers the text horizontally. */
   background-color: rgb(62, 204, 62);
   border: 4px solid rgb(135, 252, 135);
   font-size: 1.5em;
-  height: 140px;
-  width: 200px;
+  height: 150px;
+  width: 210px;
 }
 
 /* Formats all the other red cells. */
@@ -177,32 +179,33 @@ vertically, and the text-align rule centers the text horizontally. */
   background-color: rgb(255, 183, 183);
   border: 4px solid rgb(228, 195, 195);
   border-radius: 5px;
-  height: 110px;
-  width: 200px;
-  margin: 5px 0px 5px 0px;
+  height: 120px;
+  width: 210px;
+  margin: 5px 5px 5px 0px;
 }
 
 /* Formats all the other green cells. */
 .green-minor {
-  font-size: 15px;
+  font-size: 13px;
   background-color: rgb(135, 252, 135);
   border: 4px solid rgb(197, 230, 197);
   border-radius: 5px;
-  height: 110px;
-  width: 200px;
-  margin: 5px;
+  height: 120px;
+  width: 210px;
+  margin: 5px 0px 5px 0px;
+  padding: 0px 5px 0px 5px;
 }
 
 #footer {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  padding: 20px;
+  padding: 20px 5px 20px 5px;
   background-color: rgb(88, 88, 88);
   /* background-image: url("https://www.tendance-feutre.com/pub/Gamme_Bio/feutree-gris-bio.jpg"); */
   border-top: 3px solid rgb(112, 112, 112);
-  height: 250px;
-  margin-top: 50px;
+  height: 300px;
+  margin-top: 70px;
 }
 
 .footer-item {
@@ -214,7 +217,7 @@ vertically, and the text-align rule centers the text horizontally. */
   padding-left: 12px;
 }
 
-.footer-border {
+.footer-left {
   border-right: 2px solid grey;
 }
 

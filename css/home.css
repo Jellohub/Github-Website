@@ -26,6 +26,11 @@ It only goes to a maximum width of 1440px to make everything look clean. */
 #master {
   width: 1440px;
   display: none;
+  background-color: rgb(231, 231, 231);
+}
+
+/* Contains the background image for the header. */
+.header-image {
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/84/Rigatoni.jpg");
 }
 
@@ -83,9 +88,9 @@ ul {
   margin-left: 10px;
 
   background-color:rgb(235, 129, 134);
-  text-decoration: none;
   font-family: 'Dosis', sans-serif;
   font-size: 20px;
+  font-weight: 400;
 }
 
 .button:hover { background-color: rgb(109, 180, 115); }
@@ -123,15 +128,21 @@ ul {
 
 /* Sets width and size of element containing the question mark picture. */
 .left {
+  position: absolute;
   height: inherit;
   width: 20%;
 }
 
 /* Sets height and width of element containing the question. */
 .right {
+  position: absolute;
   height: inherit;
-  width: 80%;
-  padding-right: 15%;
+  width: 100%;
+  text-align: center;
+}
+
+.text {
+  width: 50%;
 }
 
 /* Formatting for blue boxes. */
@@ -155,13 +166,13 @@ ul {
 }
 
 /* Sets height of question mark picture. */
-.question { height: 65%; }
+.question { height: auto; width: 70%; }
 
 /* Color for green box, in their normal state, when you're hovering over them,
 and when you're clicking on them. */
 .green {
   background-color:	rgb(114, 211, 117);
-  border: 7px solid rgb(78, 146, 80);
+  border: 10px solid rgb(62, 116, 64);
 }
 
 .green:hover {
@@ -177,7 +188,7 @@ and when you're clicking on them. */
 and when you're clicking on them. */
 .white {
   background-color: white;
-  border: 7px solid rgb(168, 168, 168);
+  border: 10px solid rgb(138, 138, 138);
 }
 
 .white:hover {
@@ -192,7 +203,7 @@ and when you're clicking on them. */
 and when you're clicking on them. */
 .red {
   background-color: rgb(214, 113, 113);
-  border: 7px solid rgb(170, 92, 92);
+  border: 10px solid rgb(136, 73, 73);
 }
 
 .red:hover {
@@ -208,11 +219,11 @@ and when you're clicking on them. */
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  padding: 20px;
+  padding: 20px 5px 20px 5px;
   background-color: rgb(88, 88, 88);
   /* background-image: url("https://www.tendance-feutre.com/pub/Gamme_Bio/feutree-gris-bio.jpg"); */
   border-top: 3px solid rgb(112, 112, 112);
-  height: 250px;
+  height: 300px;
   margin-top: 70px;
 }
 
@@ -225,7 +236,7 @@ and when you're clicking on them. */
   padding-left: 12px;
 }
 
-.footer-border {
+.footer-left {
   border-right: 2px solid grey;
 }
 
