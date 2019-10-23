@@ -134,7 +134,7 @@ so if the browser page is narrowed, things don't get ugly. */
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  margin-right: 20px;
+  margin: 20px 20px 0px 0px;
   width: fit-content;
   text-align: justify;
   font-size: 150%;
@@ -193,3 +193,9 @@ so if the browser page is narrowed, things don't get ugly. */
 }
 
 .text { width: 500px; }
+
+@media screen and (max-width: 1342px) {
+  .main-item {
+    justify-content: center;
+  }
+}
