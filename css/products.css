@@ -1,7 +1,11 @@
 /*
   Author: Angelo Turri
-  Date of last modification: 10/15/2019
+  Date of last modification: 10/23/2019
 */
+
+/* Huge credit to the guy who made the following video:
+  https://www.youtube.com/watch?v=Lc6wyl1KdOc
+This is how I learned to code the HTML, CSS, and Javascript for my flip cards. */
 
 
 /* This makes divs extend to the edge of their parent div, as far as I can tell.
@@ -30,7 +34,6 @@ It only goes to a maximum width of 1440px to make everything look clean. */
   background-color: rgba(107, 80, 80, 0.938);
 }
 
-/* Contains image for header. */
 .header-image {
   background-image: url("https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/1363450/910/607/m2/fpnw/wm0/img_4185-.jpg?1465877099&s=b63d2face2dd4a4541dde70ccbb543a4");
 }
@@ -55,7 +58,7 @@ and other minor formatting. */
 }
 
 /* Centers the navigation bar, contained within the nav_container, on the page. */
-#nav_container {
+#nav-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -187,7 +190,7 @@ ul {
   border-right: 2px solid grey;
 }
 
-.button_light {
+.button-light {
   background-color: rgb(88, 88, 88);
   color: rgb(255, 255, 255);
   border-radius: 2px;
@@ -200,9 +203,9 @@ ul {
   font-size: 17px;
 }
 
-.button_light:hover { background-color: rgb(128, 128, 128); }
+.button-light:hover { background-color: rgb(128, 128, 128); }
 
-.button_facebook {
+.button-facebook {
   background-color: rgb(88, 88, 88);
   border-radius: 2px;
   border: 1px solid rgb(95, 95, 95);

@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1300px;
+  border: 2px solid black;
+}
+
+.small_container {
+  position: relative;
+  margin: 50px;
+  height: 200px;
+  width: 355px;
+}
+
+.photo_container {
+  z-index: 1;
+  position: absolute;
+  height: inherit;
+  width: inherit;
+}
+
+.pic {
+  position: absolute;
+  height: inherit;
+  width: inherit;
+}
+
+.zoomed {
+  z-index: 3;
+  position: fixed;
+  height: 600px;
+  width: 1065px;
+
+  left: 50%;
+  top: 50%;
+
+  /* -1/2 height */
+  margin-left: -532px;
+  
+  /* -1/2 width */
+  margin-top: -300px;
+}
+
+.closer {
+  position: absolute;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.582);
+  height: 100%;
+  width: 100%;
+}
+
+#gray {
+  z-index: 2;
+  position: absolute;
+  height: 100vw;
+  width: 100vw;
+  background-color: rgba(71, 69, 69, 0.74)
+}
+
+.invisible {
+  visibility: hidden;
+}

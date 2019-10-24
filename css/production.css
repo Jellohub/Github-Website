@@ -1,6 +1,6 @@
 /*
   Author: Angelo Turri
-  Date of last modification: 10/15/2019
+  Date of last modification: 10/23/2019
 */
 
 
@@ -27,7 +27,7 @@ It only goes to a maximum width of 1440px to make everything look clean. */
 #master {
   position: relative;
   display: none;
-  background-image: url("blue.jpg");
+  background-image: url("../pictures/blue.jpg");
   width: 1440px;
 }
 
@@ -35,7 +35,7 @@ It only goes to a maximum width of 1440px to make everything look clean. */
 and other minor formatting. */
 .header-container {
   color: #fff;
-  background-image: url("rotating_pasta_cropped.gif");
+  background-image: url("../pictures/rotating_pasta_cropped.gif");
   background-repeat: no-repeat;
   background-size: 1450px 520px;
   display: flex;
@@ -60,7 +60,7 @@ and other minor formatting. */
 }
 
 /* Centers the navigation bar, contained within the nav_container, on the page. */
-#nav_container {
+#nav-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -114,7 +114,7 @@ ul {
 }
 
 /* Centers each box horizontally on the page. */
-.mega_container {
+.mega-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -143,14 +143,14 @@ ul {
 .flex-item { margin: 10px 0px 10px 0px; }
 
 /* Contains the picture and closer when they're not zoomed in. */
-.small_container {
+.small-container {
   position: relative;
   height: 200px;
   width: 355px;
 }
 
 /* Contains the smaller pictures and closers when they're not zoomed in. */
-.small_container_2 {
+.small-container-2 {
   position: relative;
   height: 150px;
   width: 250px;
@@ -158,7 +158,7 @@ ul {
 }
 
 /* This is the class that contains the picture and closer. */
-.photo_container {
+.photo-container {
   z-index: 1; /*Places all contianers beneath the "id=gray" div, which has z-index of 2.*/
   position: absolute; /*So that the closer div can be positioned over it.*/
   height: inherit;
@@ -200,7 +200,7 @@ ul {
 
 .number { height: 150px; margin-left: 30px; }
 
-.smaller_number { height: 100px; }
+.smaller-number { height: 100px; }
 
 .explanation { width: 400px; }
 
@@ -212,7 +212,7 @@ ul {
   width: inherit;
 }
 
-.smaller_pic {
+.smaller-pic {
   position: absolute;
   left: 0px;
   right: 0px;
@@ -222,7 +222,7 @@ ul {
 
 /* Steps 11, 12, 13, and 14 are formatted slightly differntly from the rest.
 The items inside are put into a column instead of a row. */
-.vertical_container {
+.vertical-container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -255,7 +255,7 @@ The items inside are put into a column instead of a row. */
   border-right: 2px solid grey;
 }
 
-.button_light {
+.button-light {
   background-color: rgb(88, 88, 88);
   color: rgb(255, 255, 255);
   border-radius: 2px;
@@ -268,9 +268,9 @@ The items inside are put into a column instead of a row. */
   font-size: 17px;
 }
 
-.button_light:hover { background-color: rgb(128, 128, 128); }
+.button-light:hover { background-color: rgb(128, 128, 128); }
 
-.button_facebook {
+.button-facebook {
   background-color: rgb(88, 88, 88);
   border-radius: 2px;
   border: 1px solid rgb(95, 95, 95);

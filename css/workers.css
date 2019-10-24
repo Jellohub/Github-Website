@@ -1,6 +1,6 @@
 /*
   Author: Angelo Turri
-  Date of last modification: 10/15/2019
+  Date of last modification: 10/23/2019
 */
 
 
@@ -50,7 +50,7 @@ and other minor formatting. */
 }
 
 /* Centers the navigation bar, contained within the nav_container, on the page. */
-#nav_container {
+#nav-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -221,7 +221,7 @@ vertically, and the text-align rule centers the text horizontally. */
   border-right: 2px solid grey;
 }
 
-.button_light {
+.button-light {
   background-color: rgb(88, 88, 88);
   color: rgb(255, 255, 255);
   border-radius: 2px;
@@ -234,9 +234,9 @@ vertically, and the text-align rule centers the text horizontally. */
   font-size: 17px;
 }
 
-.button_light:hover { background-color: rgb(128, 128, 128); }
+.button-light:hover { background-color: rgb(128, 128, 128); }
 
-.button_facebook {
+.button-facebook {
   background-color: rgb(88, 88, 88);
   border-radius: 2px;
   border: 1px solid rgb(95, 95, 95);
